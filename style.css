@@ -7,16 +7,46 @@ body {
     margin: 0 auto;
 }
 
+p {text-align: center;}
+
+/* ------ Container 01 ------*/
+
 .flexbox-container {
     border: 3px solid #333;
     width: 500px;
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
 }
 
 .box {
     background: orange;
     border: 2px solid gray;
-    padding: 0 40px;
-    border-radius: 15px;
+    padding: 0 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ------ Container 02 ------*/
+
+.flexbox-container:nth-child(2) > .box {
+    background: #bdaaf0;
+}
+
+.flex-item-1 {
+    padding: 0;
+/*     width: 25px;
+ */
+/*  flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 45px; */
+
+    flex: 0 45px;
+}
+
+.flex-item-1:nth-child(1) {
+/*  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45px; */
+
+    flex: 1 45px;
 }
