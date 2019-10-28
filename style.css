@@ -1,0 +1,21 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.flexbox-container {
+    border: 1px solid #333;
+    width: 500px;
+    display: flex;
+}
+
+.box {
+    background: orange;
+    border: 2px solid gray;
+    padding: 0 40px;
+    border-radius: 15px;
+}
