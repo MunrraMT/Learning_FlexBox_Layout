@@ -10,10 +10,8 @@ body {
 .flexbox-container {
     border: 3px solid #333;
     width: 500px;
-    height: 430px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row-reverse wrap;
 }
 
 .box {
@@ -21,5 +19,4 @@ body {
     border: 2px solid gray;
     padding: 0 40px;
     border-radius: 15px;
-    width: 25%;
 }
