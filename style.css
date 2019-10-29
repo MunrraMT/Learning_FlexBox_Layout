@@ -14,12 +14,9 @@ p {text-align: center;}
 .flexbox-container {
     border: 3px solid #333;
     width: 550px;
-    height: 600px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-/*     align-items: flex-start;
- */    align-content: center;
+    justify-content: space-between;
 }
 
 .box {
@@ -27,8 +24,22 @@ p {text-align: center;}
     border: 2px solid gray;
     padding: 0 42px;
     border-radius: 10px;
-    text-align: center;
-    flex: 1;
+}
+
+.flexbox-container > .box:nth-child(1) {
+    order: 4;
+}
+
+.flexbox-container > .box:nth-child(2) {
+    order: 2;
+}
+
+.flexbox-container > .box:nth-child(3) {
+    order: 1;
+}
+
+.flexbox-container > .box:nth-child(4) {
+    order: 3;
 }
 
 /* ------ Container 02 ------*/
