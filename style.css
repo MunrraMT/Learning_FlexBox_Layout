@@ -7,14 +7,11 @@ body {
     margin: 0 auto;
 }
 
-p {text-align: center;}
-
 /* ------ Container 01 ------*/
 
 .flexbox-container {
-    border: 3px solid #333;
-    width: 550px;
-    display: flex;
+/*     border: 3px solid #333;
+ */    display: flex;
     flex-flow: row-reverse;
     justify-content: flex-start;
 }
@@ -22,25 +19,39 @@ p {text-align: center;}
 .box {
     background: orange;
     border: 2px solid gray;
-    padding: 0 42px;
+    padding: 0 10px;
     border-radius: 10px;
+    flex: 1;
 }
 
-.flexbox-container > .box:nth-child(1) {
-    order: -4;
+.sub {
+    flex-flow: column;
+/*     height: 400px;
+ */}
+
+.sub-box {
+    background: #bdaaf0;
+    padding: 0 45px;
+    margin: 2px;
+    align-self: center;
 }
 
-.flexbox-container > .box:nth-child(2) {
-    order: -2;
+.sub > .sub-box:nth-child(1) {
+    
 }
 
-.flexbox-container > .box:nth-child(3) {
+.sub > .sub-box:nth-child(2) {
+    
+}
+
+.sub > .sub-box:nth-child(3) {
+    
+}
+
+.sub > .sub-box:nth-child(4) {
     order: -1;
 }
 
-.flexbox-container > .box:nth-child(4) {
-    order: -3;
-}
 
 /* ------ Container 02 ------*/
 
