@@ -31,10 +31,15 @@ p {text-align: center;}
 
 .flexbox-container:nth-child(2) > .box {
     background: #bdaaf0;
+    height: 60px;
+}
+
+.flexbox-container:nth-child(2) > .box:nth-child(3) {
+    align-self: flex-start;
 }
 
 .flexbox-container:nth-child(2) {
     height: 400px;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
