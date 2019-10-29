@@ -31,15 +31,15 @@ p {text-align: center;}
 
 .flexbox-container:nth-child(2) > .box {
     background: #bdaaf0;
-    height: 60px;
+    /* margin: 10px; */
 }
 
-.flexbox-container:nth-child(2) > .box:nth-child(3) {
-    align-self: flex-start;
+.flexbox-container:nth-child(2) > .box:nth-child(4) {
+    margin-left: auto;
 }
 
 .flexbox-container:nth-child(2) {
     height: 400px;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
 }
