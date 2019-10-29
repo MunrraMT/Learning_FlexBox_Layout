@@ -13,25 +13,28 @@ p {text-align: center;}
 
 .flexbox-container {
     border: 3px solid #333;
-    width: 500px;
+    width: 550px;
+    height: 600px;
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 50px;
+    justify-content: space-around;
+/*     align-items: flex-start;
+ */    align-content: center;
 }
 
 .box {
     background: orange;
     border: 2px solid gray;
-    padding: 0 35px;
+    padding: 0 42px;
     border-radius: 10px;
     text-align: center;
+    flex: 1;
 }
 
 /* ------ Container 02 ------*/
 
-.flexbox-container:nth-child(2) > .box {
+/* .flexbox-container:nth-child(2) > .box {
     background: #bdaaf0;
-    /* margin: 10px; */
 }
 
 .flexbox-container:nth-child(2) > .box:nth-child(4) {
@@ -41,5 +44,5 @@ p {text-align: center;}
 .flexbox-container:nth-child(2) {
     height: 400px;
     justify-content: space-around;
-    /* flex-direction: column; */
-}
+    flex-direction: column;
+} */
